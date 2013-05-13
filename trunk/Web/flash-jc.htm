@@ -1,0 +1,26 @@
+<body bgcolor="#ECF0F1" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0">
+<style>
+    #test {width: 303px; height: 183px; overflow: hidden;}
+    #test a {display: block; width: 303px; height:183px; text-align: center; background: #fff;}
+    #test a img {border: none;}
+</style>
+<script language="javascript">
+    i=0;
+    function show() {
+        l=document.getElementsByTagName('a');
+        if (i<l.length-1){
+            l[i].style.display = "none";
+            i++;
+        }else {
+            for(a=0;a<l.length-1;a++){
+                l[a].style.display = "block";
+                i=0;
+            }
+        }
+    }
+    setInterval(show, 2000);
+</script>
+<div id="test">
+    <a href="#" target="_parent"><img  src="images/index_4.jpg" border="0"/></a>
+    <a href="#" target="_parent"><img  src="images/index_41.jpg" border="0"/></a>
+</div>
